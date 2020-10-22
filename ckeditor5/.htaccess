@@ -1,0 +1,6 @@
+RewriteEngine off
+RewriteBase /ckeditor5/
+ 
+RewriteRule ^(.*)$ article.php [L,QSA]
+RemoveHandler .html .htm
+AddType application/x-httpd-php .php .htm .html .phtml

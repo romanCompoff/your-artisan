@@ -1,0 +1,46 @@
+<html>
+<head>
+
+<!-- <script src="https://cdn.ckeditor.com/ckeditor5/17.0.0/classic/ckeditor.js"></script>  -->
+<script src="https://ckeditor.com/apps/ckfinder/3.5.0/ckfinder.js"></script>
+
+
+ <script src="../ckfinder/ckfinder.js"></script> 
+ <script src="ckeditor.js"></script> 
+
+</head>
+<textarea id = "editor" style = "width:80%; height:90%;">
+    <p> Здесь идет начальное содержание редактора. </ p>
+</textarea>
+<script>
+import CKFinder from '@ckeditor5-ckfinder/src/ckfinder';
+
+ClassicEditor
+    .create (document.querySelector ('#editor'),{
+        <!-- plugins: [ CKFinder ], -->
+
+        <!-- // Enable the CKFinder button in the toolbar. -->
+        <!-- toolbar: [ 'ckfinder'], -->
+
+        <!-- ckfinder: { -->
+            <!-- // Upload the images to the server using the CKFinder QuickUpload command. -->
+            <!-- uploadUrl: '/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images&responseType=json', -->
+
+            <!-- // Define the CKFinder configuration (if necessary). -->
+            <!-- options: { -->
+                <!-- resourceType: 'Images' -->
+            <!-- } -->
+        <!-- } -->
+}
+
+)
+    .then (editor => {
+        console.log ('редактор');
+    })
+    .catch (error => {
+        console.error ('ошибка');
+    });
+
+
+</script>
+</html>

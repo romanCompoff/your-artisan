@@ -1,0 +1,48 @@
+<?php
+header ("Content-Type:application/xml");
+echo '<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">';
+$nowDate = date("Y-m-d");
+echo '<url>
+      <loc>http://xn----7sbfoa9af9c5an.xn--p1ai/</loc>
+      <lastmod>';
+echo $nowDate;
+echo '</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.5</priority>
+   </url>';
+
+   			$cityes = scandir('pages/');
+			unset($cityes[0]);
+			unset($cityes[1]);
+			foreach($cityes as $key => $citye){
+			
+				echo '<url>
+      			<loc>http://xn----7sbfoa9af9c5an.xn--p1ai/';
+	  			echo $citye;
+	  			echo '/</loc>
+      			<lastmod>';
+				echo $nowDate;
+				echo '</lastmod>
+      			<changefreq>monthly</changefreq>
+      			<priority>0.6</priority>
+   				</url>';
+
+			$c = scandir('pages/' . $citye . '/');
+			unset($c[0]);
+			unset($c[1]);
+			foreach($c as $town){
+
+				echo '<url>
+      			<loc>http://xn----7sbfoa9af9c5an.xn--p1ai/';
+	  			echo $citye . '/' . $town;
+	  			echo '/</loc>
+      			<lastmod>';
+				echo $nowDate;
+				echo '</lastmod>
+      			<changefreq>monthly</changefreq>
+      			<priority>0.8</priority>
+   				</url>';		
+			}
+			}
+echo '</urlset>';

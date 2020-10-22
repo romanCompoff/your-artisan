@@ -1,0 +1,5 @@
+RewriteEngine on
+RewriteBase /App/views/err/
+ 
+RewriteRule ^(.*)$ 404.php [L,QSA]
+AddType application/x-httpd-php .html

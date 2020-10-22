@@ -1,0 +1,12 @@
+{
+    "name": "vatal/artisan",
+    "require": {},
+	"autoload": {
+  "psr4": {
+    "Vatal\\Artisan\\": "App"
+  },
+      "classmap": [
+        "App"
+    ]
+}
+}

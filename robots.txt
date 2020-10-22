@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /App*
+Disallow: /pages*
+Disallow: /css*
+Host: http://www.xn----7sbfoa9af9c5an.xn--p1ai/
+Sitemap: http://ваш-умелец.рф/sitemap.xml

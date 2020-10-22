@@ -1,0 +1,4 @@
+RewriteEngine off
+RewriteBase /css/
+ 
+RewriteRule ^(.*)$ article.php [L,QSA]

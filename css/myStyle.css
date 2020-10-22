@@ -1,0 +1,486 @@
+/* Мои изменения */
+
+@media (min-width: 768px) {
+.adsdesktop {
+    display: none;
+  }
+.adsmobile {
+display: none;
+ }
+}
+ul.list{
+	list-style: none;
+	font-size:13px;
+}
+ul.list > li
+{
+	background-image: url('../../../images/galochka.png');
+	background-repeat: no-repeat; 
+	line-height:	33px; 
+	padding-left: 43px;
+	font-size:13px;
+}
+.portfolio
+{border: 3px solid black;
+border-collapse: separate;
+border-spacing: 0px;
+transition: 0.4s;}
+.portfolio td 
+{padding-left:0px; 
+transition: 0.4s;}
+.portfolio td:hover
+{color: white;
+transition: 0.9s;
+transform: scale(1.7, 1.7);}
+.sity
+{border: 3px solid black;
+border-collapse: separate;
+border-spacing: 0px;
+transition: 0.4s;}
+.sity td 
+{padding-left:7px; }
+.sity tr:hover
+{color: white;
+background-color: black;
+transform: scale(1.02, 1.05);}
+.mouse
+{  background: url(http://23компа.рф/images/css_image/mouse.png);
+background-repeat:no-repeat;
+background-size:contain;
+	transition: 0.4s;
+}
+.mouse:hover{
+transform: scale(1.3, 1.3);}
+.pechat
+{  background: url(http://профф-отделка.рф/images/tables/pechat.png);
+background-repeat:no-repeat;
+background-size:contain;}
+.kluch
+{  background: url(http://профф-отделка.рф/images/tables/kluch.png);
+background-repeat:no-repeat;
+background-size:contain;
+	transition: 0.4s;
+}
+.kluch:hover{
+	transform: scale(1.3, 1.3);
+}
+.instrument
+{  background: url(http://профф-отделка.рф/images/tables/instrument.gif);
+background-repeat:no-repeat;
+background-size:contain;
+	transition: 0.4s;
+}
+.instrument:hover{
+	transform: scale(1.3, 1.3);
+}
+.adress
+{  background: url(http://профф-отделка.рф/images/tables/Adress.png);
+background-repeat:no-repeat;
+background-size:contain;
+	transition: 0.4s;
+}
+.adress:hover{
+	transform: scale(1.3, 1.3);
+}
+.cell
+{  background: url(http://профф-отделка.рф/images/tables/CELL.gif);
+background-repeat:no-repeat;
+background-size:contain;
+	transition: 0.4s;
+}
+.cell:hover{
+	transform: scale(1.3, 1.3);
+}
+.price
+{  background: url(http://профф-отделка.рф/images/tables/price.png);
+background-repeat:no-repeat;
+background-size:contain;
+	transition: 0.4s;
+}
+.price:hover{
+	transform: scale(1.3, 1.3);
+}
+.earth
+{  background: url(http://профф-отделка.рф/images/tables/earth.png);
+background-repeat:no-repeat;
+background-size:contain;
+}
+.clock
+{  background: url(../../../images/clock.png);
+background-repeat:no-repeat;
+background-size:contain;
+	transition: 0.4s;
+}
+.clock:hover{
+	transform: scale(1.3, 1.3);
+}
+.logo
+{  background: url(http://профф-отделка.рф/images/tables/logo.png);
+background-repeat:no-repeat;
+background-size:contain;
+	transition: 0.4s;
+}
+.logo:hover{
+	transform: scale(1.3, 1.3);
+}
+.pusto
+{ 
+background-size:contain;
+	transition: 0.4s;
+}
+.pusto:hover{
+	transform: scale(1.3, 1.3);
+}
+.vantuz
+{  background: url(http://профф-отделка.рф/images/tables/vantuz.gif);
+background-repeat:no-repeat;
+background-size:contain;
+	transition: 0.4s;
+}
+.vantuz:hover{
+	transform: scale(1.3, 1.3);
+}
+.nav-pills > li > a{
+    background:linear-gradient(to bottom, #FFFFFF, #E6E6E6) #F5F5F5 repeat-x;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) #B3B3B3;
+    border-radius: 4px;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 2px rgba(0, 0, 0, 0.05);
+    color: #333333;
+        text-decoration:none;
+    display:block;
+    font-size: 14px;
+        width:120px;
+    line-height: 20px;
+    margin: 20px auto;
+    padding: 4px 12px;
+    text-align: center;
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+    vertical-align: middle;
+  position: relative;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: transform;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+/* Код верхнего меню */
+.nav-pills > li >a:before {
+  pointer-events: none;
+  position: absolute;
+  z-index: -1;
+  content: '';
+  top: 100%;
+  left: 5%;
+  height: 10px;
+  width: 90%;
+  opacity: 0;
+  background: -webkit-radial-gradient(center, ellipse, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
+  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: -webkit-transform, opacity;
+  transition-property: transform, opacity;
+}
+
+.nav-pills > li >a:hover {
+  -webkit-transform: translateY(-5px);
+  -ms-transform: translateY(-5px);
+  transform: translateY(-5px);
+}
+.nav-pills > li >a:hover:before {
+  opacity: 1;
+  -webkit-transform: translateY(5px);
+  -ms-transform: translateY(5px);
+  transform: translateY(5px);
+}
+.nav-pills > .active > a,
+.nav-pills > .active > a:hover,
+.nav-pills > .active > a:focus {
+	color: #333333;
+	background-color: white;
+}
+/*Фон сайта*/
+body.site {
+	background-image:url(../../../images/fon.jpg);
+	background-repeat:no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	text-align:center;
+}
+.main-works{
+	width:170px;
+	
+	display:-moz-inline-grid;
+	display: inline-grid;
+	margin:30px;
+	text-align:center; 
+
+}
+.main-works > img{
+	border-radius:12px;
+}
+.vstavki{
+	background: #dcd0ff; 
+	border-radius: 12px;
+	text-align:center;
+}
+.vstavki a {
+	text-align:center;
+}
+
+@font-face {
+  font-family: 'dsa';
+  src: url('../../../media/jui/fonts/dsa.eot');
+	src: url('../../../media/jui/fonts/dsa.eot?#iefix') format('embedded-opentype'), url('../../../media/jui/fonts/dsa.woff') format('woff'), url('../../../media/jui/fonts/dsa.ttf') format('truetype'), url('../../../media/jui/fonts/dsa.svg#dsa') format('svg');
+  font-weight: normal;
+  font-style: normal;
+} 
+h5 {
+   //* font-family: 'dsa', 'Comic Sans MS', cursive;*//
+   font-family: 'Comic Sans MS', cursive;
+	font-size:33px;
+	padding:33px;
+	line-height:40px;
+	
+   }
+h1{
+	padding-top:33px;
+	
+}
+#zatemnenie {
+        background: rgba(102, 102, 102, 0.5);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: none;
+      }
+      #okno {
+        width: 300px;
+        text-align: center;
+        padding: 15px;
+        border: 3px solid #0000cc;
+        border-radius: 10px;
+        color: #0000cc;
+       
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+        background: #fff;
+      }
+	  #scrollWindow{
+		  overflow-y: scroll;
+		  
+	  }
+      #zatemnenie:target {display: block;}
+      .close {
+        display: inline-block;
+        border: 1px solid #0000cc;
+        color: #0000cc;
+        padding: 0 12px;
+        margin: 10px;
+        text-decoration: none;
+        background: #f2f2f2;
+        font-size: 14pt;
+        cursor:pointer;
+		float:none;
+      }
+      .close:hover {background: #e6e6ff;}
+	  img{border-radius:12px;}
+.forma-otpravki{
+margin:0px;
+
+}
+.cityes
+{
+	columns:2;
+	text-align:left;
+}
+.cityes>li{
+	list-style-type: none;
+	
+}
+.headline{
+	height: 10%;
+	font-size:24;
+}
+::-webkit-scrollbar-button {
+background-image:url('');
+background-repeat:no-repeat;
+width:5px;
+height:0px
+}
+
+::-webkit-scrollbar-track {
+background-color:#ecedee
+}
+
+::-webkit-scrollbar-thumb {
+-webkit-border-radius: 0px;
+border-radius: 0px;
+background-color:#6dc0c8;
+}
+
+::-webkit-scrollbar-thumb:hover{
+background-color:#56999f;
+}
+
+::-webkit-resizer{
+background-image:url('');
+background-repeat:no-repeat;
+width:4px;
+height:0px
+}
+
+::-webkit-scrollbar{
+width: 4px;
+}
+#otpravka{
+background: #dcd0ff; 
+margin-top:33px;
+margin-bottom:33px;
+padding:12px;
+border-radius:12px;
+text-align:center;
+}
+#otpravka select{
+	width:98%;
+	height:33px;
+}
+#otpravka input{
+	width:98%;
+	height:33px;
+}
+#otpravka input:hover{
+	border-color:blue;
+}
+#otpravka b {
+	line-height: 33px;
+}
+#akciya{
+	color:red;
+	background-image:url(../../../images/alert.png);
+	background-size: 50px;
+	background-repeat: no-repeat;
+	min-height:70px;
+	padding-left:50px;
+}
+.bann-left h3, .head-nav, .vstavki, #otpravka{
+	background:#e78decc2;
+}
+h4
+{margin-top: 33px;}
+.myTable td{
+	padding:7px;
+	border: 1px solid #e78decc2;
+}
+.myTable{
+	margin-top: 33px;
+	font-weight:590;
+	
+	}
+	table.myTable{
+		margin-left:-7px;
+	}
+.myTable table
+	{border: 1px solid #e78decc2;
+	border-collapse: separate;
+	border-spacing: 0px;
+	transition: 0.4s;
+	}
+.myTable td 
+	{padding-left:3px; }
+.myTable th 
+{
+	padding-left:3px;
+	border: 1px solid #e78decc2;
+}
+.myTable tr:hover
+	{color: white;
+	background-color: #e78decc2;
+	transform: scale(1.05, 1.20);
+}
+.myForm{
+	width:98%;
+	margin-top:5px;
+	height:50px;
+	
+}
+
+button.myForm{
+font-size: 24px;
+	
+}
+.blo-top ul{
+	padding-left:0px;
+}
+img.myImg{
+	width:250px;
+	float:left;
+	margin: 12px;
+}
+img.card-img-top{
+	width:80%;
+	height:250px;
+}
+@media screen and (max-width: 600px) 
+{ 
+table {
+	width:80%;
+	} 
+thead {
+	display: none;
+	} 
+tr:nth-of-type(2n) {
+	background-color: inherit;
+	} 
+tr td:first-child {
+	background: #f0f0f0; 
+	font-weight:bold;
+	font-size:1.3em;
+	} 
+tr th:first-child {
+	font-weight:bold;font-size:1.3em;
+	} 
+tbody td, tbody th {
+	display: block; text-align:center;
+	} 
+tbody td, tbody th:before { 
+content: attr(data-th); 
+display: block; text-align:center; 
+} 
+img.myImg{
+	width:80%;
+}
+#akciya{
+	background-size: 33px;
+}
+#akciya h2{
+	font-size: 12px;
+}
+#akciya h4{
+	font-size: 10px;
+}
+button.myForm{
+	font-size:12px;
+}
+img.card-img-top{
+	height:auto;
+}
+}

@@ -1,0 +1,7 @@
+RewriteEngine On
+RewriteBase /
+RewriteCond %{REQUEST_URI} !^/robots.txt
+RewriteCond %{REQUEST_URI} !^/sitemap.xml
+RewriteRule ^(.*)$ index.php [L,QSA]
+ErrorDocument 404 /App/views/err/err404.html
+AddType application/x-httpd-php .xml

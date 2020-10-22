@@ -1,0 +1,4 @@
+RewriteEngine off
+RewriteBase /images/
+ 
+RewriteRule ^(.*)$ article.php [L,QSA]
